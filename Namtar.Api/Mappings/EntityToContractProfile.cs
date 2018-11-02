@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using Namtar.Api.Contracts;
-using Namtar.Domain;
+using Namtar.Domain.Entities;
 
 namespace Namtar.Api.Mappings
 {

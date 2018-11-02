@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Namtar.Api.Contracts;
 using Namtar.Application.Interfaces;
+using Namtar.Domain.Entities;
 using System.Collections.Generic;
 
 namespace Namtar.Api.Controllers
@@ -37,7 +38,7 @@ namespace Namtar.Api.Controllers
         {
             if (ModelState.IsValid)
             {
-                service.IncluirUsuario();
+                service.IncluirUsuario(Mapper.Map<Usuario>(modelo));
             }
         }
 
