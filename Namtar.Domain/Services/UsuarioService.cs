@@ -1,25 +1,32 @@
 ﻿using System.Collections.Generic;
 using Namtar.Domain.Entities;
 using Namtar.Domain.Interfaces;
+using Namtar.Domain.Interfaces.Repository;
 
 namespace Namtar.Domain.Services
 {
     public class UsuarioService : IUsuarioService
     {
-        //private IUsuarioRepository repository { get; set; }
-        public bool Buscar(string email)
+        public UsuarioService(IUsuarioRepository repository)
         {
-            throw new System.NotImplementedException();
+            this.repository = repository;
+        }
+
+        private IUsuarioRepository repository { get; set; }
+
+        public Usuario Buscar(string email)
+        {
+            return repository.Buscar(x => x.Email == email);
         }
 
         public List<Usuario> Consultar()
         {
-            throw new System.NotImplementedException();
+            return repository.BuscarTodos();
         }
 
         public void Inserir(Usuario entity)
         {
-            throw new System.NotImplementedException();
+            repository.Insert(entity);
         }
     }
 }

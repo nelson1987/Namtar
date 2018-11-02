@@ -22,8 +22,10 @@ namespace Namtar.Application
 
         public void IncluirUsuario(Usuario entity)
         {
+            entity.IsValid();
+
             //Validar se há algum com o mesmo email
-            if (service.Buscar(entity.Email))
+            if (service.Buscar(entity.Email) != null)
                 throw new ApplicationServiceException("Já existe usuário cadastrado com esse email");
 
             service.Inserir(entity);

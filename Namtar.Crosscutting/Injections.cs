@@ -2,7 +2,9 @@
 using Namtar.Application;
 using Namtar.Application.Interfaces;
 using Namtar.Domain.Interfaces;
+using Namtar.Domain.Interfaces.Repository;
 using Namtar.Domain.Services;
+using Namtar.Repository;
 
 namespace Namtar.Crosscutting
 {
@@ -12,6 +14,7 @@ namespace Namtar.Crosscutting
         {
             services.AddTransient<IUsuarioApplicationService, UsuarioApplicationService>();
             services.AddTransient<IUsuarioService, UsuarioService>();
+            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
         }
     }
 }

@@ -8,4 +8,13 @@
     <ProjectReference Include="..\Namtar.Domain\Namtar.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="System.Collections">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.netcore.app\2.1.0\ref\netcoreapp2.1\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.netcore.app\2.1.0\ref\netcoreapp2.1\System.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

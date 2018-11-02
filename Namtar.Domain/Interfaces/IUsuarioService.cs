@@ -5,7 +5,7 @@ namespace Namtar.Domain.Interfaces
 {
     public interface IUsuarioService
     {
-        bool Buscar(string email);
+        Usuario Buscar(string email);
         void Inserir(Usuario entity);
         List<Usuario> Consultar();
     }
