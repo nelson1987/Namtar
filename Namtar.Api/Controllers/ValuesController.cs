@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Namtar.Api.Contracts;
 
 namespace Namtar.Api.Controllers
 {
@@ -26,8 +27,12 @@ namespace Namtar.Api.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] CriacaoUsuario modelo)
         {
+            if (ModelState.IsValid)
+            {
+
+            }
         }
 
         // PUT api/values/5

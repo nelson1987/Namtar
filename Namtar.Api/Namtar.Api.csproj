@@ -12,4 +12,8 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Namtar.Api.Contracts\Namtar.Api.Contracts.csproj" />
+  </ItemGroup>
+
 </Project>
