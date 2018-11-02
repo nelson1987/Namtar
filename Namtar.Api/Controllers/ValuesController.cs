@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Namtar.Api.Contracts;
 using Namtar.Application.Interfaces;
 using System.Collections.Generic;
@@ -12,9 +13,11 @@ namespace Namtar.Api.Controllers
     {
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        [ProducesResponseType(200)] //OK
+        public IActionResult Get([FromServices] IUsuarioApplicationService service)
         {
-            return new string[] { "value1", "value2" };
+            IList<ConsultaUsuario> consulta = Mapper.Map<IList<ConsultaUsuario>>(service.ConsultarUsuario());
+            return Ok(consulta);
         }
 
         // GET api/values/5
@@ -26,6 +29,9 @@ namespace Namtar.Api.Controllers
 
         // POST api/values
         [HttpPost]
+        [ProducesResponseType(200)] //OK
+        [ProducesResponseType(400)] //Requisição inválida
+        [ProducesResponseType(500)] //Erro interno de servidor
         public void Post([FromBody] CriacaoUsuario modelo,
             [FromServices] IUsuarioApplicationService service)
         {

@@ -28,7 +28,10 @@ namespace Namtar.Api
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             //registrando a classe DomainProfile do AutoMapper
-            Mapper.Initialize(m => m.AddProfile<DomainToEntityProfile>());
+            Mapper.Initialize(m => {
+                m.AddProfile<EntityToContractProfile>();
+                m.AddProfile<ContractToEntityProfile>();
+                });
 
             //Incluir Swagger
             services.AddSwaggerGen(s =>
