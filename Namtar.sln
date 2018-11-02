@@ -14,6 +14,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{22A6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namtar.Api.Contracts", "Namtar.Api.Contracts\Namtar.Api.Contracts.csproj", "{E7DFFCCF-CD3A-47B4-82BF-9A7984F633D7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_Application", "2_Application", "{49C70C3A-C547-42BE-8939-9F8936A16675}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namtar.Application", "Namtar.Application\Namtar.Application.csproj", "{1F923629-5A7D-4754-B7B8-C3FDE795F741}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_CrossCutting", "0_CrossCutting", "{48A801CB-1B10-414E-BB27-84BB1C59C72C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namtar.Crosscutting", "Namtar.Crosscutting\Namtar.Crosscutting.csproj", "{75F11D4D-823C-494F-8279-32A7EA12E31C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,6 +36,14 @@ Global
 		{E7DFFCCF-CD3A-47B4-82BF-9A7984F633D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7DFFCCF-CD3A-47B4-82BF-9A7984F633D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7DFFCCF-CD3A-47B4-82BF-9A7984F633D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F923629-5A7D-4754-B7B8-C3FDE795F741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F923629-5A7D-4754-B7B8-C3FDE795F741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F923629-5A7D-4754-B7B8-C3FDE795F741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F923629-5A7D-4754-B7B8-C3FDE795F741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75F11D4D-823C-494F-8279-32A7EA12E31C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75F11D4D-823C-494F-8279-32A7EA12E31C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75F11D4D-823C-494F-8279-32A7EA12E31C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75F11D4D-823C-494F-8279-32A7EA12E31C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,6 +51,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{359F29FF-60B9-4282-AA14-188A90A4D3D8} = {B4DF73CC-F0A6-4BA5-BB89-C94B3DCE2937}
 		{E7DFFCCF-CD3A-47B4-82BF-9A7984F633D7} = {B4DF73CC-F0A6-4BA5-BB89-C94B3DCE2937}
+		{1F923629-5A7D-4754-B7B8-C3FDE795F741} = {49C70C3A-C547-42BE-8939-9F8936A16675}
+		{75F11D4D-823C-494F-8279-32A7EA12E31C} = {48A801CB-1B10-414E-BB27-84BB1C59C72C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7C8A1E0-9D84-4AC6-BF97-9B5FAB418526}

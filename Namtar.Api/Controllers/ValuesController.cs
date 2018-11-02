@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Namtar.Api.Contracts;
+using Namtar.Application.Interfaces;
 
 namespace Namtar.Api.Controllers
 {
@@ -27,11 +28,12 @@ namespace Namtar.Api.Controllers
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] CriacaoUsuario modelo)
+        public void Post([FromBody] CriacaoUsuario modelo,
+            [FromServices] IUsuarioApplicationService service)
         {
             if (ModelState.IsValid)
             {
-
+                service.IncluirUsuario();
             }
         }
 
