@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Namtar.Application;
 using Namtar.Application.Interfaces;
 
 namespace Namtar.Crosscutting
@@ -7,7 +8,7 @@ namespace Namtar.Crosscutting
     {
         public static void Register(IServiceCollection services)
         {
-            services.AddTransient<IUsuarioApplicationService>();
+            services.AddTransient<IUsuarioApplicationService,UsuarioApplicationService>();
         }
     }
 }

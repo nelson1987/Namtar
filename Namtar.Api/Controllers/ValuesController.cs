@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Namtar.Api.Contracts;
 using Namtar.Application.Interfaces;
+using System.Collections.Generic;
 
 namespace Namtar.Api.Controllers
 {
+    [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
