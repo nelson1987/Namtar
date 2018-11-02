@@ -16,6 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Namtar.Api.Contracts\Namtar.Api.Contracts.csproj" />
     <ProjectReference Include="..\Namtar.Application\Namtar.Application.csproj" />
+    <ProjectReference Include="..\Namtar.Crosscutting\Namtar.Crosscutting.csproj" />
   </ItemGroup>
 
 </Project>
