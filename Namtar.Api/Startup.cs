@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Namtar.Api.Mappings;
 using Namtar.Crosscutting;
 
 namespace Namtar.Api
