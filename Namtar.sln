@@ -18,13 +18,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_Application", "2_Applicat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namtar.Application", "Namtar.Application\Namtar.Application.csproj", "{1F923629-5A7D-4754-B7B8-C3FDE795F741}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_CrossCutting", "0_CrossCutting", "{48A801CB-1B10-414E-BB27-84BB1C59C72C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5_CrossCutting", "5_CrossCutting", "{48A801CB-1B10-414E-BB27-84BB1C59C72C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namtar.Crosscutting", "Namtar.Crosscutting\Namtar.Crosscutting.csproj", "{75F11D4D-823C-494F-8279-32A7EA12E31C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_Domain", "3_Domain", "{41896BC3-003B-4B0E-80B1-CF0B240CF04A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_Domain", "0_Domain", "{41896BC3-003B-4B0E-80B1-CF0B240CF04A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namtar.Domain", "Namtar.Domain\Namtar.Domain.csproj", "{446C3EBF-2EA3-4318-8302-F2C139D3CEAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4_Repository", "4_Repository", "{A263B677-93C8-48E7-9A46-82ED3B4932AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namtar.Repository", "Namtar.Repository\Namtar.Repository.csproj", "{8DB469C5-A5BA-47FA-B09E-A6B730FFF3EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +56,10 @@ Global
 		{446C3EBF-2EA3-4318-8302-F2C139D3CEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{446C3EBF-2EA3-4318-8302-F2C139D3CEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{446C3EBF-2EA3-4318-8302-F2C139D3CEAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB469C5-A5BA-47FA-B09E-A6B730FFF3EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB469C5-A5BA-47FA-B09E-A6B730FFF3EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB469C5-A5BA-47FA-B09E-A6B730FFF3EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB469C5-A5BA-47FA-B09E-A6B730FFF3EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +70,7 @@ Global
 		{1F923629-5A7D-4754-B7B8-C3FDE795F741} = {49C70C3A-C547-42BE-8939-9F8936A16675}
 		{75F11D4D-823C-494F-8279-32A7EA12E31C} = {48A801CB-1B10-414E-BB27-84BB1C59C72C}
 		{446C3EBF-2EA3-4318-8302-F2C139D3CEAF} = {41896BC3-003B-4B0E-80B1-CF0B240CF04A}
+		{8DB469C5-A5BA-47FA-B09E-A6B730FFF3EB} = {A263B677-93C8-48E7-9A46-82ED3B4932AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7C8A1E0-9D84-4AC6-BF97-9B5FAB418526}
