@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Namtar.Api.Contracts;
 using Namtar.Application.Interfaces;
 using Namtar.Domain.Entities;
+using System;
 using System.Collections.Generic;
 
 namespace Namtar.Api.Controllers
@@ -22,36 +23,45 @@ namespace Namtar.Api.Controllers
         }
 
         // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
+        //[HttpGet("{id}")]
+        //public IActionResult Get(int id)
+        //{
+        //    return Ok("value");
+        //}
 
         // POST api/values
         [HttpPost]
         [ProducesResponseType(200)] //OK
         [ProducesResponseType(400)] //Requisição inválida
         [ProducesResponseType(500)] //Erro interno de servidor
-        public void Post([FromBody] CriacaoUsuario modelo,
+        public IActionResult Post([FromBody] CriacaoUsuario modelo,
             [FromServices] IUsuarioApplicationService service)
         {
             if (ModelState.IsValid)
             {
-                service.IncluirUsuario(Mapper.Map<Usuario>(modelo));
+                try
+                {
+                    service.IncluirUsuario(Mapper.Map<Usuario>(modelo));
+                    return Ok("Inserido com sucesso");
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest("Problemas encontrados");
+                }
             }
+            return NotFound("Não está valido");
         }
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+        //// PUT api/values/5
+        //[HttpPut("{id}")]
+        //public IActionResult Put(int id, [FromBody] string value)
+        //{
+        //}
 
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        //// DELETE api/values/5
+        //[HttpDelete("{id}")]
+        //public IActionResult Delete(int id)
+        //{
+        //}
     }
 }
