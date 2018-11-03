@@ -6,26 +6,26 @@ namespace Namtar.Domain.Services
 {
     public class UsuarioService : IUsuarioService
     {
-        private IUsuarioRepository repository { get; set; }
+        private IUsuarioRepository Repository { get; }
 
         public UsuarioService(IUsuarioRepository repository)
         {
-            this.repository = repository;
+            this.Repository = repository;
         }
 
-        public Usuario Buscar(string email)
+        public Usuario BuscarPorEmail(string email)
         {
-            return repository.Buscar(x => x.Email == email);
+            return Repository.Buscar(x => x.Email == email);
         }
 
         public List<Usuario> Consultar()
         {
-            return repository.BuscarTodos();
+            return Repository.BuscarTodos();
         }
 
         public void Inserir(Usuario entity)
         {
-            repository.Insert(entity);
+            Repository.Insert(entity);
         }
     }
 }

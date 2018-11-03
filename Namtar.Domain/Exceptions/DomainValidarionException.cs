@@ -4,7 +4,7 @@ using System.Runtime.Serialization;
 namespace Namtar.Domain.Exceptions
 {
     [Serializable]
-    public class DomainValidarionException : Exception
+    public class DomainValidarionException : NamtarException
     {
         public DomainValidarionException()
         {

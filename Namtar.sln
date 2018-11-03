@@ -30,7 +30,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_Repository", "3_Repositor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Namtar.Repository", "Namtar.Repository\Namtar.Repository.csproj", "{A1F75895-B1B4-4E8E-AD51-07E1D170DC06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namtar.Domain.Tests", "Namtar.Domain.Tests\Namtar.Domain.Tests.csproj", "{C618FC9E-EB26-4E37-B38E-92D1CF166ACF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Namtar.Domain.Tests", "Namtar.Domain.Tests\Namtar.Domain.Tests.csproj", "{C618FC9E-EB26-4E37-B38E-92D1CF166ACF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namtar.Repository.Tests", "Namtar.Repository.Tests\Namtar.Repository.Tests.csproj", "{37893DF4-FA9E-422F-8460-083B3CDAB036}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -66,6 +68,10 @@ Global
 		{C618FC9E-EB26-4E37-B38E-92D1CF166ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C618FC9E-EB26-4E37-B38E-92D1CF166ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C618FC9E-EB26-4E37-B38E-92D1CF166ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37893DF4-FA9E-422F-8460-083B3CDAB036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37893DF4-FA9E-422F-8460-083B3CDAB036}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37893DF4-FA9E-422F-8460-083B3CDAB036}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37893DF4-FA9E-422F-8460-083B3CDAB036}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +84,7 @@ Global
 		{446C3EBF-2EA3-4318-8302-F2C139D3CEAF} = {41896BC3-003B-4B0E-80B1-CF0B240CF04A}
 		{A1F75895-B1B4-4E8E-AD51-07E1D170DC06} = {A263B677-93C8-48E7-9A46-82ED3B4932AD}
 		{C618FC9E-EB26-4E37-B38E-92D1CF166ACF} = {41896BC3-003B-4B0E-80B1-CF0B240CF04A}
+		{37893DF4-FA9E-422F-8460-083B3CDAB036} = {A263B677-93C8-48E7-9A46-82ED3B4932AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7C8A1E0-9D84-4AC6-BF97-9B5FAB418526}

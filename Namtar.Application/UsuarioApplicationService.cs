@@ -1,5 +1,4 @@
-﻿using Namtar.Application.Exceptions;
-using Namtar.Application.Interfaces;
+﻿using Namtar.Application.Interfaces;
 using Namtar.Domain.Entities;
 using Namtar.Domain.Interfaces;
 using System.Collections.Generic;
@@ -10,14 +9,14 @@ namespace Namtar.Application
     {
         public UsuarioApplicationService(IUsuarioService service)
         {
-            this.service = service;
+            this.Service = service;
         }
 
-        private IUsuarioService service { get; set; }
+        private IUsuarioService Service { get; set; }
 
         public List<Usuario> ConsultarUsuario()
         {
-            return service.Consultar();
+            return Service.Consultar();
         }
 
         public void IncluirUsuario(Usuario entity)
@@ -28,7 +27,7 @@ namespace Namtar.Application
             //if (service.Buscar(entity.Email) != null)
             //    throw new ApplicationServiceException("Já existe usuário cadastrado com esse email");
 
-            service.Inserir(entity);
+            Service.Inserir(entity);
             //Incluir
             //throw new NotImplementedException();
         }

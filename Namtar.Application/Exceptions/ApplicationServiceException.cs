@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Namtar.Domain.Exceptions;
+using System;
 using System.Runtime.Serialization;
 
 namespace Namtar.Application.Exceptions
 {
     [Serializable]
-    public class ApplicationServiceException : Exception
+    public class ApplicationServiceException : NamtarException
     {
         public ApplicationServiceException()
         {

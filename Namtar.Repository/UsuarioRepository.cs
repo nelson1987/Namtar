@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Namtar.Domain.Entities;
 using Namtar.Domain.Interfaces;
+using Namtar.Repository.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -21,19 +22,25 @@ namespace Namtar.Repository
 
         public Usuario Buscar(Func<Usuario, bool> predicate)
         {
-            DapperPlusManager.Entity<Usuario>().Table("TB_USUARIO")
-                .Map(x=>x.Id, "IDT_USUARIO")
-                .Map(x=>x.Nome, "NOM_USUARIO")
-                .Map(x => x.Email, "EMAIL_USUARIO")
-                .Map(x => x.Senha, "SENHA_USUARIO");
-
-            using (SqlConnection conexao = new SqlConnection(
-                _config.GetConnectionString("BloggingDatabase")))
+            try
             {
-                //conexao.GetHashCode<(new List<Usuario>() { entity });
-                var invoice = conexao.Get<Usuario>(predicate);
+                DapperPlusManager.Entity<Usuario>().Table("TB_USUARIO")
+                    .Map(x => x.Id, "IDT_USUARIO")
+                    .Map(x => x.Nome, "NOM_USUARIO")
+                    .Map(x => x.Email, "EMAIL_USUARIO")
+                    .Map(x => x.Senha, "SENHA_USUARIO");
+
+                using (SqlConnection conexao = new SqlConnection(
+                    _config.GetConnectionString("BloggingDatabase")))
+                {
+                    //conexao.GetHashCode<(new List<Usuario>() { entity });
+                    return conexao.Get<Usuario>(predicate);
+                }
             }
-            throw new NotImplementedException();
+            catch (Exception ex)
+            {
+                throw new RepositoryException("Erro ao tentar buscar um usuário.");
+            }
         }
 
         public List<Usuario> BuscarTodos()
@@ -43,18 +50,26 @@ namespace Namtar.Repository
 
         public void Insert(Usuario entity)
         {
-            DapperPlusManager.Entity<Usuario>().Table("TB_USUARIO")
-                .Map(x => x.Id, "IDT_USUARIO")
-                .Map(x => x.Nome, "NOM_USUARIO")
-                .Map(x => x.Email, "EMAIL_USUARIO")
-                .Map(x => x.Senha, "SENHA_USUARIO");
-
-            using (SqlConnection conexao = new SqlConnection(
-                _config.GetConnectionString("BloggingDatabase")))
+            try
             {
-                conexao.BulkInsert(new List<Usuario>() { entity });
+                entity.IsValid();
+
+                DapperPlusManager.Entity<Usuario>().Table("TB_USUARIO")
+                    .Map(x => x.Id, "IDT_USUARIO")
+                    .Map(x => x.Nome, "NOM_USUARIO")
+                    .Map(x => x.Email, "EMAIL_USUARIO")
+                    .Map(x => x.Senha, "SENHA_USUARIO");
+
+                using (SqlConnection conexao = new SqlConnection(
+                    _config.GetConnectionString("BloggingDatabase")))
+                {
+                    conexao.BulkInsert(new List<Usuario>() { entity });
+                }
             }
-            //throw new NotFiniteNumberException();
+            catch (Exception ex)
+            {
+                throw new RepositoryException("Erro ao tentar buscar um usuário.");
+            }
         }
     }
 }
