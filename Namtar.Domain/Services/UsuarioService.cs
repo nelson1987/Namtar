@@ -1,18 +1,17 @@
 ﻿using System.Collections.Generic;
 using Namtar.Domain.Entities;
 using Namtar.Domain.Interfaces;
-using Namtar.Domain.Interfaces.Repository;
 
 namespace Namtar.Domain.Services
 {
     public class UsuarioService : IUsuarioService
     {
+        private IUsuarioRepository repository { get; set; }
+
         public UsuarioService(IUsuarioRepository repository)
         {
             this.repository = repository;
         }
-
-        private IUsuarioRepository repository { get; set; }
 
         public Usuario Buscar(string email)
         {

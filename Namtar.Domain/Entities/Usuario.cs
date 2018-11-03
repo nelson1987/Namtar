@@ -4,6 +4,18 @@ namespace Namtar.Domain.Entities
 {
     public class Usuario
     {
+        protected Usuario()
+        {
+
+        }
+
+        public Usuario(string nome, string email, string senha)
+        {
+            this.Nome = nome;
+            this.Email = email;
+            this.Senha = senha;
+        }
+
         public int Id { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }

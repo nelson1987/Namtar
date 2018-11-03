@@ -5,30 +5,30 @@ VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Api", "1_Api", "{B4DF73CC-F0A6-4BA5-BB89-C94B3DCE2937}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namtar.Api", "Namtar.Api\Namtar.Api.csproj", "{359F29FF-60B9-4282-AA14-188A90A4D3D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Namtar.Api", "Namtar.Api\Namtar.Api.csproj", "{359F29FF-60B9-4282-AA14-188A90A4D3D8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{22A6CEF2-1BC4-4DA4-AD27-D6903F880AD5}"
 	ProjectSection(SolutionItems) = preProject
 		Create Table Usuario.sql = Create Table Usuario.sql
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namtar.Api.Contracts", "Namtar.Api.Contracts\Namtar.Api.Contracts.csproj", "{E7DFFCCF-CD3A-47B4-82BF-9A7984F633D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Namtar.Api.Contracts", "Namtar.Api.Contracts\Namtar.Api.Contracts.csproj", "{E7DFFCCF-CD3A-47B4-82BF-9A7984F633D7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_Application", "2_Application", "{49C70C3A-C547-42BE-8939-9F8936A16675}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namtar.Application", "Namtar.Application\Namtar.Application.csproj", "{1F923629-5A7D-4754-B7B8-C3FDE795F741}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Namtar.Application", "Namtar.Application\Namtar.Application.csproj", "{1F923629-5A7D-4754-B7B8-C3FDE795F741}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5_CrossCutting", "5_CrossCutting", "{48A801CB-1B10-414E-BB27-84BB1C59C72C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namtar.Crosscutting", "Namtar.Crosscutting\Namtar.Crosscutting.csproj", "{75F11D4D-823C-494F-8279-32A7EA12E31C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Namtar.Crosscutting", "Namtar.Crosscutting\Namtar.Crosscutting.csproj", "{75F11D4D-823C-494F-8279-32A7EA12E31C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_Domain", "0_Domain", "{41896BC3-003B-4B0E-80B1-CF0B240CF04A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namtar.Domain", "Namtar.Domain\Namtar.Domain.csproj", "{446C3EBF-2EA3-4318-8302-F2C139D3CEAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Namtar.Domain", "Namtar.Domain\Namtar.Domain.csproj", "{446C3EBF-2EA3-4318-8302-F2C139D3CEAF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_Repository", "3_Repository", "{A263B677-93C8-48E7-9A46-82ED3B4932AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Namtar.Repository", "Namtar.Repository\Namtar.Repository.csproj", "{CBEFE391-250E-40ED-9784-CD6A66DD51B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Namtar.Repository", "Namtar.Repository\Namtar.Repository.csproj", "{A1F75895-B1B4-4E8E-AD51-07E1D170DC06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,10 +56,10 @@ Global
 		{446C3EBF-2EA3-4318-8302-F2C139D3CEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{446C3EBF-2EA3-4318-8302-F2C139D3CEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{446C3EBF-2EA3-4318-8302-F2C139D3CEAF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CBEFE391-250E-40ED-9784-CD6A66DD51B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CBEFE391-250E-40ED-9784-CD6A66DD51B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CBEFE391-250E-40ED-9784-CD6A66DD51B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CBEFE391-250E-40ED-9784-CD6A66DD51B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1F75895-B1B4-4E8E-AD51-07E1D170DC06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1F75895-B1B4-4E8E-AD51-07E1D170DC06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1F75895-B1B4-4E8E-AD51-07E1D170DC06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1F75895-B1B4-4E8E-AD51-07E1D170DC06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,7 +70,7 @@ Global
 		{1F923629-5A7D-4754-B7B8-C3FDE795F741} = {49C70C3A-C547-42BE-8939-9F8936A16675}
 		{75F11D4D-823C-494F-8279-32A7EA12E31C} = {48A801CB-1B10-414E-BB27-84BB1C59C72C}
 		{446C3EBF-2EA3-4318-8302-F2C139D3CEAF} = {41896BC3-003B-4B0E-80B1-CF0B240CF04A}
-		{CBEFE391-250E-40ED-9784-CD6A66DD51B9} = {A263B677-93C8-48E7-9A46-82ED3B4932AD}
+		{A1F75895-B1B4-4E8E-AD51-07E1D170DC06} = {A263B677-93C8-48E7-9A46-82ED3B4932AD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D7C8A1E0-9D84-4AC6-BF97-9B5FAB418526}

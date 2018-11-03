@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Namtar.Domain.Interfaces.Repository
+namespace Namtar.Domain.Interfaces
 {
     public interface IUsuarioRepository
     {

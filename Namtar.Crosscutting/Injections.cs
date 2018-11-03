@@ -2,7 +2,6 @@
 using Namtar.Application;
 using Namtar.Application.Interfaces;
 using Namtar.Domain.Interfaces;
-using Namtar.Domain.Interfaces.Repository;
 using Namtar.Domain.Services;
 using Namtar.Repository;
 

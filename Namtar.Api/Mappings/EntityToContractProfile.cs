@@ -10,9 +10,7 @@ namespace Namtar.Api.Mappings
         {
             #region Entity to Contract
 
-            CreateMap<ConsultaUsuario, Usuario>()
-            .ForMember(dest => dest.Senha, src => src.Ignore());
-            //src => src.MapFrom(p => p.Preco * p.Quantidade));
+            CreateMap<Usuario, ConsultaUsuario>();
 
             #endregion
         }

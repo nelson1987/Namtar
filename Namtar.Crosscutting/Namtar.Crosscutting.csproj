@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Namtar.Application\Namtar.Application.csproj" />
+    <ProjectReference Include="..\Namtar.Repository\Namtar.Repository.csproj" />
   </ItemGroup>
 
 </Project>
