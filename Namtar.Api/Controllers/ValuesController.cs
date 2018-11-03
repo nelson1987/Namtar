@@ -46,7 +46,7 @@ namespace Namtar.Api.Controllers
                 }
                 catch (Exception ex)
                 {
-                    return BadRequest("Problemas encontrados");
+                    return BadRequest($"Problemas encontrados {ex.Message}");
                 }
             }
             return NotFound("Não está valido");
